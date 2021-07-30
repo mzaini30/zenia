@@ -1,12 +1,11 @@
-<h1>Hello World...</h1>
-<p>Menuju ke <a href="/about">About</a></p>
+<script>
+	document.title = 'Zen'
+</script>
 
 <style>
 	h1 {
-		@apply text-blue-800
+		@apply p-10
 	}
 </style>
 
-<script>
-	document.title = 'Beranda'
-</script>
+<h1>Hello World</h1>
