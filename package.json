@@ -1,0 +1,57 @@
+{
+  "name": "routify-app",
+  "version": "1.0.0",
+  "@comments scripts": {
+    "dev": "run all dev:* scripts",
+    "dev:routify": "generate Routify's routes.js on filechange",
+    "build": "run all build:* scripts",
+    "build:routify": "build routify",
+    "serve": "serve content in 'dist' folder"
+  },
+  "scripts": {
+    "dev": "run-p dev:*",
+    "dev:routify": "routify",
+    "serve": "run-p serve:*",
+    "serve:spa": "spassr",
+    "serve:ssr": "spassr --ssr --port 5005",
+    "build": "cross-env NODE_ENV=production run-s build:*",
+    "build:routify": "routify -b",
+    "test": "npm run test:dev && npm run test:build",
+    "test:dev": "node test/lib/wrapper dev ava test/{common,dev}/**/*.test.js",
+    "test:build": "node test/lib/wrapper build ava test/{common,build}/**/*.test.js",
+    "dev:vite": "vite",
+    "build:vite": "vite build",
+    "serve:vite": "vite preview"
+  },
+  "devDependencies": {
+    "@roxi/routify": "^2.14.0",
+    "fkill": "^7.1.0",
+    "npm-run-all": "^4.1.5",
+    "svelte": "^3.35.0",
+    "cross-env": "^7.0.3",
+    "spassr": "^2.4.1-0",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.10",
+    "svelte-hmr": "^0.14.4",
+    "vite": "^2.3.7",
+    "vite-main-js": "^0.0.1",
+    "svelte-windicss-preprocess": "^3.0.0-beta.8"
+  },
+  "routify": {
+    "extensions": "svelte,html,svx,md"
+  },
+  "@comment options": [
+    "config provides defaults for spassr, spank, tossr and poindexter.",
+    "You can delete the field and this comment, if you use neither."
+  ],
+  "appConfig": {
+    "port": 5000,
+    "assetsDir": "public",
+    "template": "dist/index.html",
+    "distDir": "dist",
+    "buildDir": "dist/assets",
+    "script": "dist/main.js"
+  },
+  "ava": {
+    "verbose": true
+  }
+}
