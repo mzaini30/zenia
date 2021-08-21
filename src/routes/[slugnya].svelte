@@ -72,6 +72,11 @@
 		{#if isinya.tanggal}
 			<p><em>{new Date(+isinya.tanggal)}</em></p>
 		{/if}
+
+		{#if isinya.judul.includes('(PPT)') && false}
+			<a href="/ppt/{slugnya}" class="buka-ppt">Buka PPT</a>
+		{/if}
+
 		{@html isinya.html}
 		<blockquote><p>Buat yang mau donasi untuk kelangsungan komunitas Echlus, silahkan transfer ke <a href="https://sociabuzz.com/hiyurigi/tribe">halaman donasi kami.</a></p></blockquote>
 	</div>
@@ -118,6 +123,9 @@
 	}
 	.kumpulan-kotak {
 		@apply mt-10
+	}
+	.buka-ppt {
+		@apply no-underline bg-green-500 rounded text-white py-1 px-3
 	}
 	form {
 		@apply mt-10
