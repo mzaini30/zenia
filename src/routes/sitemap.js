@@ -6,9 +6,9 @@ export async function get(){
 	function render(data){
 		return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 			${data.map(x => `<url>
-				<loc>https://zen.echlus.my.id/${x.slug}</loc>
+				<loc>https://zenia.my.id/${x.slug}</loc>
 			</url>`)}
-			<url><loc>https://zen.echlus.my.id/</loc></url>
+			<url><loc>https://zenia.my.id/</loc></url>
 		</urlset>`
 	}
 

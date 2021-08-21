@@ -3,7 +3,7 @@
 	export let judul = 'Lorem Ipsum'
 	export let cuplikan = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
 
-	const link = 'https://zen.echlus.my.id'
+	const link = 'https://zenia.my.id'
 </script>
 
 <meta name="description" content="{cuplikan}" />
