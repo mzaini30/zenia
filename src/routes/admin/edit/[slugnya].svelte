@@ -83,7 +83,7 @@
 				})
 			})
 			if (mulaiHapus) {
-				browser && goto('/admin', {replaceState: true})
+				browser && goto('/', {replaceState: true})
 			}
 		}
 	}
