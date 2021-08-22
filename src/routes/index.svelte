@@ -11,10 +11,10 @@
 		@apply block m-6 my-8 mt-0 border border-black p-3
 	}
 	.bagian-tools {
-		@apply mx-6 mb-6
+		@apply mx-6 mb-5
 	}
 	.bagian-tools a {
-		@apply px-3 py-1 rounded border border-black
+		@apply px-3 py-1 mr-1 mb-1 rounded border border-black
 	}
 	.kotak h2 {
 		@apply text-2xl pb-2 pt-1
@@ -91,7 +91,8 @@
 	}
 
 	const tools = [
-		{nama: "Go", link: "go"}
+		{nama: "Go", link: "go"},
+		{nama: "Tulis", link: "tulis"},
 	]
 </script>
 
