@@ -10,6 +10,12 @@
 		box-shadow: 10px 10px 0 0 black;
 		@apply block m-6 my-8 mt-0 border border-black p-3
 	}
+	.bagian-tools {
+		@apply mx-6 mb-6
+	}
+	.bagian-tools a {
+		@apply px-3 py-1 rounded border border-black
+	}
 	.kotak h2 {
 		@apply text-2xl pb-2 pt-1
 	}
@@ -83,6 +89,10 @@
 			behavior: 'smooth'
 		})
 	}
+
+	const tools = [
+		{nama: "Go", link: "go"}
+	]
 </script>
 
 <svelte:head>
@@ -94,6 +104,12 @@
 
 <div class="cari">
 	<input type="text" placeholder="Cari apa?" on:keyup={filterTulisan} bind:value={dicari}>
+</div>
+
+<div class="bagian-tools">
+	{#each tools as x}
+		<a href="/{x.link}">{x.nama}</a>
+	{/each}
 </div>
 
 {#each tempSemuaTulisan as x}
