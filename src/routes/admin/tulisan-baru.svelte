@@ -50,13 +50,13 @@
 
 <style>
 	form {
-		@apply p-5 pt-0
+		@apply p-5 pt-0 h-screen bg-gray-200
 	}
 	.kotak {
 		box-shadow: 10px 10px 0 0 black;
-		@apply block my-8 mt-0 border border-black w-full p-3 bg-white
+		@apply block my-8 mt-0 border border-black w-full p-3 bg-white bg-white
 	}
 	.submit {
-		@apply user-select-none cursor-pointer focus:bg-gray-300
+		@apply user-select-none cursor-pointer focus:bg-gray-300 bg-white
 	}
 </style>

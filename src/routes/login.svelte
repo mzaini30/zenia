@@ -25,7 +25,7 @@
 			if (data[0].banyak > 0){
 				localStorage.username = username
 				localStorage.password = password
-				goto('/admin', {replaceState: true})
+				goto('/', {replaceState: true})
 			} else {
 				alert('Username dan password salah')
 			}
@@ -43,13 +43,13 @@
 
 <style>
 	form {
-		@apply p-5
+		@apply p-5 h-screen bg-gray-200
 	}
 	input {
-		@apply w-full block border border-black p-3;
+		@apply w-full block border border-black p-3 bg-white;
 		box-shadow: 10px 10px 0 0 black;
 	}
 	.tombol {
-		@apply mt-7 user-select-none cursor-pointer
+		@apply mt-7 user-select-none cursor-pointer bg-white
 	}
 </style>
