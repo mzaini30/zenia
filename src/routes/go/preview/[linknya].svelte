@@ -15,7 +15,7 @@
 
 <form action="">
 	<p>Hasilnya:</p>
-	<input type="url" readonly value='https://zen.echlus.my.id/go/{$page.params.linknya}'>
+	<input type="url" readonly value='https://zenia.my.id/go/{$page.params.linknya}'>
 </form>
 
 <svelte:head>
