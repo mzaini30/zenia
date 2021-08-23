@@ -5,7 +5,7 @@
 
 <style>
 	form {
-		@apply p-5
+		@apply p-5 h-screen bg-gray-200
 	}
 	input {
 		@apply w-full block border border-black p-3;

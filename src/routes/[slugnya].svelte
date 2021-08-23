@@ -97,7 +97,7 @@
 
 <style>
 	.konten {
-		@apply p-4 pb-10 md:(w-[70%] mx-auto);
+		@apply p-4 pb-10 md:(w-[70%] mx-auto) bg-gray-100;
 	}
 	.judul {
 		@apply text-3xl pb-3
@@ -128,7 +128,7 @@
 	}
 	.kotak {
 		box-shadow: 10px 10px 0 0 black;
-		@apply block m-6 mx-0 my-8 mt-0 border border-black p-3 whitespace-pre-wrap
+		@apply block m-6 mx-0 my-8 mt-0 border border-black p-3 whitespace-pre-wrap bg-white
 	}
 	textarea.kotak {
 		@apply w-full

@@ -1,4 +1,7 @@
 <style>
+	.kontainer {
+		@apply bg-gray-200
+	}
 	h1 {
 		font-family: 'MonteCarlo', cursive;
 		@apply text-7xl text-center py-7
@@ -8,13 +11,13 @@
 	}
 	.kotak, .cari {
 		box-shadow: 10px 10px 0 0 black;
-		@apply block m-6 my-8 mt-0 border border-black p-3
+		@apply block m-6 my-8 mt-0 border border-black p-3 bg-white
 	}
 	.bagian-tools {
 		@apply mx-6 mb-5
 	}
 	.bagian-tools a {
-		@apply px-3 py-1 mr-1 mb-1 rounded border border-black
+		@apply px-3 py-1 mr-1 mb-1 rounded border border-black bg-white
 	}
 	.kotak h2 {
 		@apply text-2xl pb-2 pt-1
@@ -101,6 +104,7 @@
 	<Meta slug='' cuplikan='Blog yang membahas tentang frontend developing dan psikologi' judul='Zen'></Meta>
 </svelte:head>
 
+<div class="kontainer">
 <h1>Zen</h1>
 
 <div class="cari">
@@ -127,3 +131,4 @@
 <a href="/admin/tulisan-baru" class="melayang">
 	<svg width="{ukuranIconTulis}em" height="{ukuranIconTulis}em" viewBox="0 0 24 24"><g fill="none"><path fillRule="evenodd" clipRule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1zm1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3v3z" fill="currentColor"></path></g></svg>
 </a>
+</div>
