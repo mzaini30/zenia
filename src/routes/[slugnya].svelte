@@ -98,7 +98,7 @@
 
 <style>
 	.konten {
-		@apply p-4 pb-10 md:(w-[70%] mx-auto) bg-gray-100;
+		@apply p-4 pb-10 md:px-[15%] bg-gray-100;
 	}
 	.judul {
 		@apply text-3xl pb-3

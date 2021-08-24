@@ -9,6 +9,9 @@
 	input {
 		@apply w-full
 	}
+	.wadah-kotak {
+		@apply md:(grid-cols-3 grid)
+	}
 	.kotak, .cari {
 		box-shadow: 10px 10px 0 0 black;
 		@apply block m-6 my-8 mt-0 border border-black p-3 bg-white
@@ -117,12 +120,14 @@
 	{/each}
 </div>
 
-{#each tempSemuaTulisan as x}
-	<a href="/{x.slug}" class="kotak">
-		<h2>{x.judul}</h2>
-		<p>{x.cuplikan}....</p>
-	</a>
-{/each}
+<div class="wadah-kotak">
+	{#each tempSemuaTulisan as x}
+		<a href="/{x.slug}" class="kotak">
+			<h2>{x.judul}</h2>
+			<p>{x.cuplikan}....</p>
+		</a>
+	{/each}
+</div>
 
 <div class="melayang-kiri" on:click={keAtas}>
 	<svg width="{ukuranIconTulis * 1.07}em" height="{ukuranIconTulis}em" viewBox="0 0 17 16"><path d="M17.027 8a8 8 0 0 0-8-8a8 8 0 0 0-8 8a8 8 0 0 0 8 8a8 8 0 0 0 8-8zM5.154 10c-.205-.186-.205-.774 0-.96l3.467-4.9a.566.566 0 0 1 .746 0l3.478 4.9c.207.185.207.773 0 .96h-7.69z" fill="currentColor" fillRule="evenodd"></path></svg>
