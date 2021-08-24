@@ -9,6 +9,7 @@
   "devDependencies": {
     "@sveltejs/adapter-vercel": "^1.0.0-next.27",
     "@sveltejs/kit": "next",
+    "axios": "^0.21.1",
     "embed-youtube": "^1.0.0",
     "highlight.js": "^11.2.0",
     "kumpulan-tools": "^1.0.0",

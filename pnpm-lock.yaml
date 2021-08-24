@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@sveltejs/adapter-vercel': ^1.0.0-next.27
   '@sveltejs/kit': next
+  axios: ^0.21.1
   embed-youtube: ^1.0.0
   highlight.js: ^11.2.0
   kumpulan-tools: ^1.0.0
@@ -16,6 +17,7 @@ specifiers:
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.27
   '@sveltejs/kit': 1.0.0-next.156_svelte@3.42.1
+  axios: 0.21.1
   embed-youtube: 1.0.0
   highlight.js: 11.2.0
   kumpulan-tools: 1.0.0
@@ -82,6 +84,14 @@ packages:
       - supports-color
     dev: true
 
+  /axios/0.21.1:
+    resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
+    dependencies:
+      follow-redirects: 1.14.2
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
   /call-bind/1.0.2:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
     dependencies:
@@ -122,6 +132,16 @@ packages:
 
   /estree-walker/2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+    dev: true
+
+  /follow-redirects/1.14.2:
+    resolution: {integrity: sha512-yLR6WaE2lbF0x4K2qE2p9PEXKLDjUjnR/xmjS3wHAYxtlsI9MLLBJUZirAHKzUZDGLxje7w/cXR49WOUo4rbsA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     dev: true
 
   /fsevents/2.3.2:
