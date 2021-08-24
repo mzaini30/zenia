@@ -50,7 +50,7 @@
 
 <style>
 	form {
-		@apply p-5 pt-0 h-screen bg-gray-200 px-[15%]
+		@apply p-5 pt-0 h-screen bg-gray-200 md:px-[15%]
 	}
 	.kotak {
 		box-shadow: 10px 10px 0 0 black;

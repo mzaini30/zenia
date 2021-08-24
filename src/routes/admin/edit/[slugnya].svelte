@@ -101,7 +101,7 @@
 
 <style>
 	form {
-		@apply p-5 pt-0 px-[15%]
+		@apply p-5 pt-0 md:px-[15%]
 	}
 	.kotak {
 		box-shadow: 10px 10px 0 0 black;
