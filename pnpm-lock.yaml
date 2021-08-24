@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@sveltejs/adapter-vercel': ^1.0.0-next.27
   '@sveltejs/kit': next
+  embed-youtube: ^1.0.0
   highlight.js: ^11.2.0
   kumpulan-tools: ^1.0.0
   marked: ^3.0.0
@@ -14,7 +15,8 @@ specifiers:
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.27
-  '@sveltejs/kit': 1.0.0-next.154_svelte@3.42.1
+  '@sveltejs/kit': 1.0.0-next.156_svelte@3.42.1
+  embed-youtube: 1.0.0
   highlight.js: 11.2.0
   kumpulan-tools: 1.0.0
   marked: 3.0.0
@@ -40,8 +42,8 @@ packages:
       esbuild: 0.12.20
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.154_svelte@3.42.1:
-    resolution: {integrity: sha512-3WqdmZyTwrAnPtFI5cNLXswGiCx934tfWckS6MLbOTlN6zGtex2H9A2WZKlXRhpxtIM8XqrYlGKr1qNDBmATWQ==}
+  /@sveltejs/kit/1.0.0-next.156_svelte@3.42.1:
+    resolution: {integrity: sha512-YHT3sbPKpBGSYYFgEpXUx7JhN682wdXhc5INYZGqFfaGqkIOrThosz8qRsLQBfRbFnu0fzgWSsfj7FKq8YeFuA==}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
@@ -106,6 +108,10 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
+
+  /embed-youtube/1.0.0:
+    resolution: {integrity: sha512-mXcD+3dNuI9jYLCMg29vzo5m35oj8Je8TBpkwnYMenxddvgkk/No1jRcETWDqTRDg5Uhqy4nSpI+oj0rAPVWNA==}
     dev: true
 
   /esbuild/0.12.20:

@@ -34,6 +34,7 @@
 	const rasioIcon = 2
 
 	import Meta from '$lib/Meta.svelte'
+	import yt from "embed-youtube"
 
 	async function ambilSupport(){
 		const getSupport = await fetch(sql, {
@@ -73,7 +74,7 @@
 			<p><em>{new Date(+isinya.tanggal)}</em></p>
 		{/if}
 
-		{@html isinya.html}
+		{@html yt(isinya.html)}
 		<blockquote><p>Buat yang mau donasi untuk kelangsungan komunitas Echlus, silahkan transfer ke <a href="https://sociabuzz.com/hiyurigi/tribe">halaman donasi kami.</a></p></blockquote>
 	</div>
 
