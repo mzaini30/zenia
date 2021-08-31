@@ -42,6 +42,6 @@
 		@apply fixed right-0 top-0 p-3 cursor-pointer user-select-none
 	}
 	.isi {
-		@apply pt-13 bg-gray-200 h-screen
+		@apply pt-13 bg-gray-200 min-h-screen
 	}
 </style>
