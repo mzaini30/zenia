@@ -1,0 +1,22 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "~TODO~@0.0.1",
+    "stage": "dev",
+    "script": "svelte-kit dev",
+    "pkgname": "~TODO~",
+    "err": {
+      "name": "pnpm",
+      "message": "~TODO~@0.0.1 dev: `svelte-kit dev`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: ~TODO~@0.0.1 dev: `svelte-kit dev`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:92557:22)\n    at ChildProcess.emit (events.js:315:20)\n    at maybeClose (internal/child_process.js:1048:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
+    }
+  },
+  "2 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"
+}
