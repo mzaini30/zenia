@@ -40,6 +40,8 @@
 	import {sql, tulisan} from './api'
 	import {headers} from '$lib/headers'
 
+	export const router = false
+
 	export async function load({fetch}){
 		const datanya = await fetch(sql, {
 			method: 'post',
