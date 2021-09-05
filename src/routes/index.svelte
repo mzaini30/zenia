@@ -120,6 +120,8 @@
 	{/each}
 </div>
 
+<div id="SC_TBlock_859647"></div>
+
 <div class="wadah-kotak">
 	{#each tempSemuaTulisan as x}
 		<a href="/{x.slug}" class="kotak">
