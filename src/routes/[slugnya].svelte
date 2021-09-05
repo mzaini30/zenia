@@ -2,8 +2,6 @@
 	import {sql, tulisan, support} from './api'
 	import {headers} from '$lib/headers'
 
-	export const router = false
-
 	export async function load({page, fetch}){
 		let isinya = await fetch(sql, {
 			method: 'post',
