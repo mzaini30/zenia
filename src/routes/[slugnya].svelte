@@ -78,8 +78,6 @@
 		<blockquote><p>Buat yang mau donasi untuk kelangsungan komunitas Echlus, silahkan transfer ke <a href="https://sociabuzz.com/hiyurigi/tribe">halaman donasi kami.</a></p></blockquote>
 	</div>
 
-	<div id="SC_TBlock_859647"></div>
-
 	<form action="" on:submit|preventDefault={kirimSupport}>
 		<textarea required name="" id="" cols="30" rows="10" class="kotak" placeholder="Tulis support di sini" bind:value={teksSupport}></textarea>
 		<input type="submit" class="kotak" value="Kirim support">
