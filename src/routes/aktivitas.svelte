@@ -9,11 +9,11 @@
 
 	const title: string = 'Aktivitas'
 	const gambar: string[] = [
+		"https://github-readme-stats.vercel.app/api/wakatime?username=mzaini30",
 		"https://github-profile-trophy.vercel.app/?username=mzaini30&row=1",
 		"https://github-readme-stats.vercel.app/api?username=mzaini30&theme=blue-green",
 		"https://github-readme-stats.vercel.app/api/top-langs/?username=mzaini30&theme=blue-green",
 		"https://github-readme-streak-stats.herokuapp.com/?user=mzaini30&theme=blue-green",
-		"https://github-readme-stats.vercel.app/api/wakatime?username=mzaini30",
 	]
 </script>
 
