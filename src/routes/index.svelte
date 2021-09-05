@@ -54,7 +54,7 @@
 	}
 </script>
 
-<script>
+<script lang="ts">
 	import Meta from '$lib/Meta.svelte'
 	import {browser} from '$app/env'
 	
@@ -96,9 +96,15 @@
 		})
 	}
 
-	const tools = [
+	interface Tools {
+		nama: string
+		link: string
+	}
+
+	const tools: Tools[] = [
 		{nama: "Go", link: "go"},
 		{nama: "Tulis", link: "tulis"},
+		{nama: "Aktivitas", link: "aktivitas"},
 	]
 </script>
 
