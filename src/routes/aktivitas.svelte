@@ -19,7 +19,7 @@
 				kunci: 'tampil'
 			})
 		})
-		datanya = datanya.json()
+		datanya = await datanya.json()
 
 		return {
 			props: {
@@ -52,7 +52,7 @@
 	<div class="putih">
 		<h2>Klien</h2>	
 		{#each linknya as x}
-			<a href={x.link} rel='nofollow'>{x.link.replace('http://', '').replace('https://', '')}</a>
+			<a href={x.link} rel='nofollow'>{x.link.replace('http://', '').replace('https://', '').replace("www.", "")}</a>
 		{/each}
 	</div>
 
