@@ -3,9 +3,37 @@
 	<Meta {title} description="All my activities in code" url="{link}/aktivitas"/>
 </svelte:head>
 
+<script context='module' lang="ts">
+	import {sql} from './api'
+	import {stringify} from 'qs'
+	import {headers} from '$lib/headers'
+
+	const link: string = 'c0fb8f8ac2d58d9af14156671038df78' // id, link
+
+	export async function load({fetch}){
+		let datanya = await fetch(sql, {
+			method: 'post',
+			headers,
+			body: stringify({
+				id: link,
+				kunci: 'tampil'
+			})
+		})
+		datanya = datanya.json()
+
+		return {
+			props: {
+				linknya: datanya
+			}
+		}
+	}
+</script>
+
 <script lang="ts">
 	import {link} from "./data"
 	import Meta from "svelte-meta-text"
+
+	export let linknya
 
 	const title: string = 'Aktivitas'
 	const gambar: string[] = [
@@ -18,6 +46,16 @@
 </script>
 
 <div class="wadah">
+
+	<!-- {JSON.stringify(linknya)} -->
+
+	<div class="putih">
+		<h2>Klien</h2>	
+		{#each linknya as x}
+			<a href={x.link} rel='nofollow'>{x.link.replace('http://', '').replace('https://', '')}</a>
+		{/each}
+	</div>
+
 	{#each gambar as x}
 		<div><img src={x}></div>
 	{/each}
@@ -27,10 +65,20 @@
 	.wadah {
 		@apply p-3 pb-0 min-h-screen bg-gradient-to-br from-red-500 to-violet-500;
 	}
-	.wadah div {
+	.wadah div:not(.putih) {
 		@apply pb-3;
 	}
 	img {
 		@apply w-full h-auto;
+	}
+
+	.putih {
+		@apply bg-white rounded-xl shadow p-8 pb-5 mb-3;
+	}
+	.putih h2 {
+		@apply text-3xl mb-3 font-bold text-blue-500;
+	}
+	.putih a {
+		@apply inline-block mr-3 mb-3;
 	}
 </style>
