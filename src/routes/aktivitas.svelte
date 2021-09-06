@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>{title}</title>
-	<Meta {title} description="All my activities in code" url="{link}/aktivitas"/>
+	<Meta {title} description="All my activities in code" url="{linkBlog}/aktivitas"/>
 </svelte:head>
 
 <script context='module' lang="ts">
@@ -30,7 +30,7 @@
 </script>
 
 <script lang="ts">
-	import {link} from "./data"
+	import {link as linkBlog} from "./data"
 	import Meta from "svelte-meta-text"
 
 	export let linknya
