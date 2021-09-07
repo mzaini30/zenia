@@ -37,11 +37,13 @@
 
 	const title: string = 'Aktivitas'
 	const gambar: string[] = [
-		"https://github-readme-stats.vercel.app/api/wakatime?username=mzaini30",
 		"https://github-profile-trophy.vercel.app/?username=mzaini30&row=1",
+		"https://github-readme-stats.vercel.app/api/wakatime?username=mzaini30",
 		"https://github-readme-stats.vercel.app/api?username=mzaini30&theme=blue-green",
-		"https://github-readme-stats.vercel.app/api/top-langs/?username=mzaini30&theme=blue-green",
 		"https://github-readme-streak-stats.herokuapp.com/?user=mzaini30&theme=blue-green",
+		"https://github-readme-stats.vercel.app/api/top-langs/?username=mzaini30&theme=blue-green",
+		"https://projecteuler.net/profile/mzaini30.png",
+		"https://data.typeracer.com/misc/badge?user=mzaini30"
 	]
 </script>
 
@@ -69,7 +71,7 @@
 		@apply pb-3;
 	}
 	img {
-		@apply w-full h-auto;
+		@apply max-w-full mx-auto h-auto;
 	}
 
 	.putih {
