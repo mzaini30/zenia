@@ -36,7 +36,13 @@
 	export let linknya
 
 	const title: string = 'Aktivitas'
-	const gambar: string[] = [
+
+	interface Badge {
+		link: string
+		gambar: string
+	}
+
+	const gambar2: string[] = [
 		"https://github-profile-trophy.vercel.app/?username=mzaini30&row=1",
 		"https://github-readme-stats.vercel.app/api/wakatime?username=mzaini30",
 		"https://github-readme-stats.vercel.app/api?username=mzaini30&theme=blue-green",
@@ -58,7 +64,7 @@
 		{/each}
 	</div>
 
-	{#each gambar as x}
+	{#each gambar2 as x}
 		<div><img src={x}></div>
 	{/each}
 </div>
