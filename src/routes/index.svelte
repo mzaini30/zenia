@@ -1,6 +1,6 @@
 <style>
 	.kontainer {
-		@apply bg-gray-200 min-h-screen
+		@apply bg-gray-200 min-h-screen p-1;
 	}
 	h1 {
 		font-family: 'MonteCarlo', cursive;
