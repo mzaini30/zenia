@@ -66,9 +66,15 @@
 		{/each}
 	</div>
 
-	{#each gambar as x}
-		<div><a href={x.link}><img src={x.gambar}></a></div>
-	{/each}
+	<center>
+		{#each gambar as x}
+			<div>
+				<a href={x.link}>
+					<img src={x.gambar}>
+				</a>
+			</div>
+		{/each}
+	</center>
 </div>
 
 <style lang="postcss">
@@ -79,7 +85,7 @@
 		@apply pb-3;
 	}
 	img {
-		@apply max-w-full mx-auto h-auto;
+		@apply max-w-full h-auto inline;
 	}
 
 	.putih {
