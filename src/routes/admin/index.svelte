@@ -29,7 +29,7 @@
 
 <div class="kotak">
 	{#each listTulisan as x}
-		<a href="/admin/edit/{x.slug}">{x.judul}</a>
+		<a href="/admin/edit/{x.slug}" sveltekit:prefetch>{x.judul}</a>
 	{/each}
 </div>
 

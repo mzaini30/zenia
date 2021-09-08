@@ -18,10 +18,10 @@
 </svelte:head>
 
 <div class="kotak">
-	<a href="/">Beranda website</a>
-	<a href="/admin">Beranda admin</a>
-	<a href="/admin/tulisan-baru">Tulisan baru</a>
-	<a href="/" on:click|preventDefault={keluar}>Logout</a>
+	<a sveltekit:prefetch href="/">Beranda website</a>
+	<a sveltekit:prefetch href="/admin">Beranda admin</a>
+	<a sveltekit:prefetch href="/admin/tulisan-baru">Tulisan baru</a>
+	<a sveltekit:prefetch href="/" on:click|preventDefault={keluar}>Logout</a>
 </div>
 
 <style>

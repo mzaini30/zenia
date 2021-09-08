@@ -36,7 +36,7 @@
 </script>
 
 <div class="isi">
-	<a href="/tulis" class="tombol">Tulis baru</a>
+	<a href="/tulis" sveltekit:prefetch class="tombol">Tulis baru</a>
 	<p>{teksnya.trim()}</p> 
 </div>
 
