@@ -42,14 +42,16 @@
 		gambar: string
 	}
 
-	const gambar2: string[] = [
-		"https://github-profile-trophy.vercel.app/?username=mzaini30&row=1",
-		"https://github-readme-stats.vercel.app/api/wakatime?username=mzaini30",
-		"https://github-readme-stats.vercel.app/api?username=mzaini30&theme=blue-green",
-		"https://github-readme-streak-stats.herokuapp.com/?user=mzaini30&theme=blue-green",
-		"https://github-readme-stats.vercel.app/api/top-langs/?username=mzaini30&theme=blue-green",
-		"https://projecteuler.net/profile/mzaini30.png",
-		"https://data.typeracer.com/misc/badge?user=mzaini30"
+	const linkGithub: string = 'https://github.com/mzaini30'
+
+	const gambar: Badge[] = [
+		{link: linkGithub, gambar: 'https://github-profile-trophy.vercel.app/?username=mzaini30&row=1'},
+		{link: 'https://wakatime.com/@mzaini30', gambar: 'https://github-readme-stats.vercel.app/api/wakatime?username=mzaini30'},
+		{link: linkGithub, gambar: 'https://github-readme-stats.vercel.app/api?username=mzaini30&theme=blue-green'},
+		{link: linkGithub, gambar: 'https://github-readme-streak-stats.herokuapp.com/?user=mzaini30&theme=blue-green'},
+		{link: linkGithub, gambar: 'https://github-readme-stats.vercel.app/api/top-langs/?username=mzaini30&theme=blue-green'},
+		{link: 'https://projecteuler.net/profile/mzaini30.png', gambar: 'https://projecteuler.net/profile/mzaini30.png'},
+		{link: 'https://data.typeracer.com/pit/profile?user=mzaini30', gambar: 'https://data.typeracer.com/misc/badge?user=mzaini30'}
 	]
 </script>
 
@@ -64,8 +66,8 @@
 		{/each}
 	</div>
 
-	{#each gambar2 as x}
-		<div><img src={x}></div>
+	{#each gambar as x}
+		<div><a href={x.link}><img src={x.gambar}></a></div>
 	{/each}
 </div>
 
