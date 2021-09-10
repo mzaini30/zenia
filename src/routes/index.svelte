@@ -1,4 +1,4 @@
-<style>
+<style lang='postcss'>
 	.kontainer {
 		@apply bg-gray-200 min-h-screen p-1;
 	}
@@ -105,6 +105,7 @@
 		{nama: "Go", link: "go"},
 		{nama: "Tulis", link: "tulis"},
 		{nama: "Aktivitas", link: "aktivitas"},
+		{nama: "Kosong", link: "kosong"},
 	]
 </script>
 
