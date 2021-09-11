@@ -105,7 +105,6 @@
 		{nama: "Go", link: "go"},
 		{nama: "Tulis", link: "tulis"},
 		{nama: "Aktivitas", link: "aktivitas"},
-		{nama: "Kosong", link: "kosong"},
 	]
 </script>
 
