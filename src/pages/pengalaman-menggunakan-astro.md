@@ -18,3 +18,24 @@ So, akhirnya datangnya Astro yang menggabungkan kedua keunggulan itu.
 
 Contoh sintaks Astro:
 
+```astro
+---
+const biodata = [
+	{nama: "Zen", alamat: "Samarinda"},
+	{nama: "Ummi Maryam", alamat: "Loa Bakung"},
+	{nama: "Maryam", alamat: "Loa Bakung"}
+]
+---
+
+<h1>List Biodata</h1>
+{biodata.map(x => (
+	<div class="kotak">
+		Nama: {x.nama} <br>
+		Alamat: {x.alamat}
+	</div>
+))}
+```
+
+Sangat familiar kan? Apalagi yang terbiasa pakai JSX pasti sudah nggak asing dengan penggunaan map() untuk ngeloop.
+
+Kemudian, walaupun hasil dari Astro ini adalah pure static HTML, kita juga bisa menyisipkan JavaScript seperti biasanya dengan tag script. Terus, kita juga bisa **menyisipkan framework JavaScript ke dalamnya!** Wew. Kalau kata teman sih, ini namanya _island arsitektur_ yang artinya adalah sebuah tempat yang mampu menampung semuanya.
