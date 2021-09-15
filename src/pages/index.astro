@@ -5,14 +5,26 @@ import PreviewPost from '../components/preview-post.astro'
 
 let semuaTulisan = Astro.fetchContent('./*.md')
 semuaTulisan = semuaTulisan.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf())
+
+const link = [
+	{judul: "activity", link: "/coding-activity"},
+	{judul: "github", link: "https://github.com/mzaini30/zenia"}
+]
 ---
 
 <Default>
-	<Meta slot="head" title="Zen" description="A blog about frontend world and psychology"/>
+	<Meta slot="head" title="Zen" description="A blog about frontend world and psychology"/> 
 	
 	<div class="wadah" slot="body">
 		<h1>Zen</h1>
 		<p class="deskripsi">I love writing about frontend world, JavaScript, and Psychology in my blog.</p> 
+
+		<div class="link">
+			{link.map((x, n) => <>
+				{n != 0 ? <> &bull; </> : ""}
+				<a href={x.link}>{x.judul}</a>
+			</>)}
+		</div>
 
 		<div class="isi-postingan">
 			{semuaTulisan.map(x => <PreviewPost data={x}/>)}
@@ -24,16 +36,19 @@ semuaTulisan = semuaTulisan.sort((a, b) => new Date(b.date).valueOf() - new Date
 	.wadah {
 		@apply p-5;
 	}
-
 	h1 {
 		@apply text-center text-5xl;
 	}
-
 	.deskripsi {
 		@apply text-center italic text-lg;
 	}
-
 	.isi-postingan {
 		@apply pt-5 grid grid-cols-1 md:grid-cols-3 gap-3;
+	}
+	.link {
+		@apply text-center pt-3;
+	}
+	.link a {
+		@apply underline;
 	}
 </style>
