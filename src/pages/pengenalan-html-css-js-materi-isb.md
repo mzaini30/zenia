@@ -80,9 +80,3 @@ console.log(`${nama} berumur ${usia} tahun`)
  }
 </style>
 ```
-
-## Penerapan HTML, CSS, JS
-
-https://zenia.my.id/penghitung-kata-di-blogger
-
-https://zenia.my.id/kode-untuk-resize-gambar
