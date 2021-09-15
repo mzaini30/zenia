@@ -184,8 +184,3 @@ Untuk font, aku pakai Poppins. Ada kok di Google Fonts. Tinggal copas kodenya aj
 > Svelte ini digunakan juga kalau membuat ebook bukan ya? Ada javascript nya juga ya, diberi dynamic value juga wuihh jadi nambah deh perbendaharaan kosa kata saya mengenai si Svelte ini
 
 Nggak tau sih Mbak kalau ebook. Baru denger juga malah kalau bisa untuk buat ebook. Yang jelas sih, Svelte itu kan macam HTML, CSS, JS biasa, jadi ya fokus untuk membuat tampilan website.
-
-## Beberapa artikel tentang Svelte
-
-1. https://dev.to/hanna/why-svelte-is-revolutionary-415e
-2. https://dev.to/hanna/riotjs-vs-svelte-35h4
