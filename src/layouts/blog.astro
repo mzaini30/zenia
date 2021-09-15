@@ -9,6 +9,7 @@ const {content} = Astro.props
 	<Meta title={content.title} description={content.description} slot="head"/>
 
 	<div slot="body">
+		<link rel="stylesheet" href={Astro.resolve("../components/prism.css")}>
 		<a href="/">
 			<img src={Astro.resolve('../components/logo.png')} alt="">
 		</a>
