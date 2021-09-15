@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	word-wrap: break-word;
+	font-family: "Bona Nova", serif;
+}
+
+img {
+	max-width: 100%;
+}

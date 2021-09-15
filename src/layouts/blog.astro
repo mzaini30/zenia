@@ -1,0 +1,40 @@
+---
+import Default from "./default.astro"
+import Meta from "../components/meta.astro"
+
+const {content} = Astro.props
+---
+
+<Default>
+	<Meta title={content.title} description={content.description} slot="head"/>
+
+	<div slot="body">
+		<a href="/">
+			<img src={Astro.resolve('../components/logo.png')} alt="">
+		</a>
+		<div class="prose max-w-none postingan">
+			<h1>{content.title}</h1>
+			<p><em>{content.description}</em></p>
+			<slot/>
+		</div>
+	</div>
+</Default>
+
+<style lang="postcss">
+	@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+
+	a {
+		@apply w-20 pt-8 block mx-auto;
+	}
+	.postingan {
+		@apply p-5 pl-[15%] pr-[15%];
+	}
+	.postingan :global(p),
+	.postingan :global(li) {
+		@apply text-lg;
+	}
+	.postingan :global(code),
+	.postingan :global(code *){
+		font-family: 'Fira Code', monospace;
+	}
+</style>
