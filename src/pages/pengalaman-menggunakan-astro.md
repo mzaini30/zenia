@@ -39,3 +39,17 @@ const biodata = [
 Sangat familiar kan? Apalagi yang terbiasa pakai JSX pasti sudah nggak asing dengan penggunaan map() untuk ngeloop.
 
 Kemudian, walaupun hasil dari Astro ini adalah pure static HTML, kita juga bisa menyisipkan JavaScript seperti biasanya dengan tag script. Terus, kita juga bisa **menyisipkan framework JavaScript ke dalamnya!** Wew. Kalau kata teman sih, ini namanya _island arsitektur_ yang artinya adalah sebuah tempat yang mampu menampung semuanya.
+
+Misalnya aja kita ingin membuat fitur komentar dengan menggunakan Svelte, maka file Astronya cukup seperti ini:
+
+```astro
+---
+import Komentar from "../components/komentar.svelte"
+---
+
+<h1>Ini Judul</h1>
+<p>Ini isinya...</p>
+<Komentar client:only="svelte"/>
+```
+
+Simpel banget kan ya?
