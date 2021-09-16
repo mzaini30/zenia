@@ -17,6 +17,15 @@ const {content} = Astro.props
 			<h1>{content.title}</h1>
 			<p><em>{content.description}</em></p>
 			<slot/>
+
+			<script src="https://utteranc.es/client.js"
+				repo="mzaini30/zenia"
+				issue-term="pathname"
+				theme="github-light"
+				crossorigin="anonymous"
+				async>
+			</script>			
+			
 		</div>
 	</div>
 </Default>
