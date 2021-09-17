@@ -4,7 +4,7 @@ import Meta from "../components/meta.astro"
 
 const {content} = Astro.props
 const {url} = Astro.request
-const slug = String(url).replace("https://zenia.my.id/", "")
+const slug = String(url).replace("https://zenia.my.id/", "").replace("/", "")
 ---
 
 <Default>
