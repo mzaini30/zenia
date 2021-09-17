@@ -1,6 +1,7 @@
 ---
 import Default from "./default.astro"
 import Meta from "../components/meta.astro"
+import Komentar from '../components/komentar.svelte'
 
 const {content} = Astro.props
 ---
@@ -18,14 +19,10 @@ const {content} = Astro.props
 			<p><em>{content.description}</em></p>
 			<slot/>
 
-			<script src="https://utteranc.es/client.js"
-				repo="mzaini30/zenia"
-				issue-term="pathname"
-				theme="github-light"
-				crossorigin="anonymous"
-				async>
-			</script>			
-			
+			<div class="komentar">
+				<Komentar client:only='svelte'></Komentar>
+			</div>
+
 		</div>
 	</div>
 </Default>
@@ -49,5 +46,13 @@ const {content} = Astro.props
 	}
 	.postingan :global(img){
 		@apply block mx-auto max-w-full;
+	}
+
+	.komentar :global(*) {
+		@apply focus:outline-none;
+	}
+	.komentar :global(.nama), 
+	.komentar :global(textarea) {
+		@apply border px-2 py-1 w-full block bg-gray-100 rounded;
 	}
 </style>
