@@ -5,6 +5,7 @@ import Meta from "../components/meta.astro"
 const {content} = Astro.props
 const {url} = Astro.request
 const slug = String(url).replace("https://zenia.my.id/", "").replace("/", "")
+const {headers} = content.astro
 ---
 
 <Default>
@@ -12,12 +13,18 @@ const slug = String(url).replace("https://zenia.my.id/", "").replace("/", "")
 
 	<div slot="body">
 		<link rel="stylesheet" href={Astro.resolve("../components/prism.css")}>
-		<a href="/">
+		<a href="/" class="logo">
 			<img src={Astro.resolve('../components/logo.png')} alt="">
 		</a>
 		<div class="prose max-w-none postingan">
 			<h1>{content.title}</h1>
 			<p><em>{content.description}</em></p>
+			{headers.length > 0 ? <div>
+				<h2>Contents</h2>
+				<ul>
+					{headers.map(x => <li><a href={`#${x.slug}`}>{x.text}</a></li>)}
+				</ul>
+			</div> : ""}
 			<slot/>
 
 			<div id="disqus_thread"></div>
@@ -47,7 +54,7 @@ const slug = String(url).replace("https://zenia.my.id/", "").replace("/", "")
 <style lang="postcss">
 	@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
 
-	a {
+	.logo {
 		@apply w-20 mt-8 block mx-auto;
 	}
 	.postingan {
@@ -63,5 +70,13 @@ const slug = String(url).replace("https://zenia.my.id/", "").replace("/", "")
 	}
 	.postingan :global(img){
 		@apply block mx-auto max-w-full;
+	}
+	.postingan :global(h1),
+	.postingan :global(h2),
+	.postingan :global(h3),
+	.postingan :global(h4),
+	.postingan :global(h5),
+	.postingan :global(h6) {
+		scroll-margin-top: 30px;
 	}
 </style>
