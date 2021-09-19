@@ -7,7 +7,6 @@ let semuaTulisan = Astro.fetchContent('./*.md')
 semuaTulisan = semuaTulisan.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf())
 
 const link = [
-	{judul: "activity", link: "/coding-activity"},
 	{judul: "github", link: "https://github.com/mzaini30/zenia"}
 ]
 ---
