@@ -19,7 +19,7 @@ Edit `~/.config/micro/settings.json`:
 
 ## Create Syntax Highlighting for Sublime
 
-First, install `Svelte` package in Sublime.
+First, install `JSX` package in Sublime.
 
 Next, create `Astro.sublime-syntax` in `~/.config/sublime-text-3/User/`:
 
@@ -47,7 +47,17 @@ contexts:
 
   html:
     - match: ""
-      push: Packages/Svelte/Svelte.sublime-syntax
+      push: Packages/JSX/JSX.sublime-syntax
+  #     with_prototype:
+  #       - match: "={"
+  #         push: expression
+
+  # expression:
+  #   - match: ""
+  #     push: Packages/JavaScript/JavaScript.sublime-syntax
+  #     with_prototype:
+  #       - match: "}"
+  #         push: html
 ```
 
 Or, you can using intruction in [mzaini30/astro-sublime](https://github.com/mzaini30/astro-sublime).
