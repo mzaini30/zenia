@@ -11,7 +11,9 @@ Terkait mendengarkan musik ini, itu preferensi pribadi sih, apakah mau mendengar
 
 Bahkan, Ustadz Adi Hidayat aja menjelaskan bahwa para ulama berbeda pendapat terkait hukum mendengarkan musik. Ada yang mengatakan bahwa itu boleh, dan ada pula yang mengharamkan. Tapi, beliau sendiri memilih untuk tidak mendengarkan musik karena bisa menggeser kecintaan beliau mendengarkan Quran dengan mendengarkan musik.
 
-Kalau nggak salah, yang ini video beliau saat membahas tentang musik: <https://youtu.be/ip1ycpl096c>.
+Kalau nggak salah, yang ini video beliau saat membahas tentang musik: 
+
+https://youtu.be/ip1ycpl096c
 
 Kalau menurut aku pribadi, tentu saja hati harus memilih salah satu; hafalan Quran atau musik. Ketika aku lebih condong krpada musik, maka aku akan merasa berat dalam menghafalkan Quran. Ketika condong kepada Quran, maka aku akan merasa nggak sreg kalau mendengarkan musik.
 
