@@ -10,7 +10,6 @@
    markdownOptions: {
    	remarkPlugins: [
    		[import('remark-breaks')],
-   		[import("remark-oembed")],
    	],
    }
   };
