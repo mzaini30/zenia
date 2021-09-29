@@ -104,7 +104,6 @@
 	const tools: Tools[] = [
 		{nama: "Go", link: "go"},
 		{nama: "Tulis", link: "tulis"},
-		{nama: "Aktivitas", link: "aktivitas"},
 	]
 </script>
 
